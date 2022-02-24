@@ -719,6 +719,9 @@ section {
 .project-card:nth-child(4) {
     border: solid 1px rgba(13, 52, 135, .3);
 }
+.project-card:nth-child(5) {
+    border: solid 1px #ccc;
+}
 .project-card .top-part {
     padding: 80px 50px;
     position: relative;
@@ -767,6 +770,9 @@ section {
 }
 .project-card:nth-child(4) .top-part {
     background-color: #0d3487;
+}
+.project-card:nth-child(5) .top-part {
+    background-color: #023047;
 }
 .project-image-container {
     width: 100%;

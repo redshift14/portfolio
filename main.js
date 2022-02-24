@@ -279,11 +279,13 @@ const certifierBtn = document.querySelector('.certifier-btn');
 const univBtn = document.querySelector('.univ-btn');
 const portfolio1Btn = document.querySelector('.portfolio-1-btn');
 const iamBtn = document.querySelector('.iam-btn');
+const fawatirBtn = document.querySelector('.fawatir-btn')
 
 const certifierPreview = document.querySelector('.certifier-preview-page');
 const univPreview = document.querySelector('.univ-preview-page');
 const portfolio1Preview = document.querySelector('.portfolio-1-preview-page');
 const iamPreview = document.querySelector('.iam-preview-page');
+const fawatirPreview = document.querySelector('.fawatir-preview-page');
 
 const closeBtn = document.querySelector('.close-preview');
 
@@ -315,6 +317,14 @@ iamBtn.addEventListener('click', () => {
     closeBtn.classList.remove('close-preview-hide');
 })
 
+fawatirBtn.addEventListener('click', () => {
+    fawatirPreview.classList.add('iframe-container-show');
+    fawatirPreview.classList.remove('iframe-container-hide');
+    closeBtn.classList.add('close-preview-show');
+    closeBtn.classList.remove('close-preview-hide');
+});
+
+
 closeBtn.addEventListener('click', () => {
     certifierPreview.classList.add('iframe-container-hide');
     certifierPreview.classList.remove('iframe-container-show');
@@ -324,6 +334,8 @@ closeBtn.addEventListener('click', () => {
     portfolio1Preview.classList.remove('iframe-container-show');
     iamPreview.classList.add('iframe-container-hide');
     iamPreview.classList.remove('iframe-container-show');
+    fawatirPreview.classList.add('iframe-container-hide');
+    fawatirPreview.classList.remove('iframe-container-show');
     closeBtn.classList.add('close-preview-hide');
     closeBtn.classList.remove('close-preview-show');
 });
