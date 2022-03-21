@@ -10,9 +10,10 @@ const pages = Array.from(pagesContainer.children);
 // button[3] == contact
 
 // nav menu
+
 // i should have used a loop, but i could not figure it out
-// so i hard code it
-// i will fix it in the future when i get move comfortable with JS
+// so i hard code it since i have only four pages, probably using a framework in the 
+// future will fix it
 
 buttonsLi[0].addEventListener('click', e => {
     const initialButton = buttonsLi[0];
@@ -280,12 +281,18 @@ const univBtn = document.querySelector('.univ-btn');
 const portfolio1Btn = document.querySelector('.portfolio-1-btn');
 const iamBtn = document.querySelector('.iam-btn');
 const fawatirBtn = document.querySelector('.fawatir-btn')
+const manageBtn = document.querySelector('.manage-challenge-btn');
+const weatherAppBtn = document.querySelector('.weather-app-btn');
+const fridayThirteenBtn = document.querySelector('.friday-thirteen-btn');
 
 const certifierPreview = document.querySelector('.certifier-preview-page');
 const univPreview = document.querySelector('.univ-preview-page');
 const portfolio1Preview = document.querySelector('.portfolio-1-preview-page');
 const iamPreview = document.querySelector('.iam-preview-page');
 const fawatirPreview = document.querySelector('.fawatir-preview-page');
+const managePreview = document.querySelector('.manage-challenge-preview-page');
+const weatherAppPreview = document.querySelector('.weather-app-preview-page');
+const fridayThirteenPreview = document.querySelector('.friday-thirteen-preview-page');
 
 const closeBtn = document.querySelector('.close-preview');
 
@@ -324,6 +331,26 @@ fawatirBtn.addEventListener('click', () => {
     closeBtn.classList.remove('close-preview-hide');
 });
 
+manageBtn.addEventListener('click', () => {
+    managePreview.classList.add('iframe-container-show');
+    managePreview.classList.remove('iframe-container-hide');
+    closeBtn.classList.add('close-preview-show');
+    closeBtn.classList.remove('close-preview-hide');
+});
+
+weatherAppBtn.addEventListener('click', () => {
+    weatherAppPreview.classList.add('iframe-container-show');
+    weatherAppPreview.classList.remove('iframe-container-hide');
+    closeBtn.classList.add('close-preview-show');
+    closeBtn.classList.remove('close-preview-hide');
+});
+
+fridayThirteenBtn.addEventListener('click', () => {
+    fridayThirteenPreview.classList.add('iframe-container-show');
+    fridayThirteenPreview.classList.remove('iframe-container-hide');
+    closeBtn.classList.add('close-preview-show');
+    closeBtn.classList.remove('close-preview-hide');
+})
 
 closeBtn.addEventListener('click', () => {
     certifierPreview.classList.add('iframe-container-hide');
@@ -336,6 +363,13 @@ closeBtn.addEventListener('click', () => {
     iamPreview.classList.remove('iframe-container-show');
     fawatirPreview.classList.add('iframe-container-hide');
     fawatirPreview.classList.remove('iframe-container-show');
+    managePreview.classList.add('iframe-container-hide');
+    managePreview.classList.remove('iframe-container-show');
+    weatherAppPreview.classList.add('iframe-container-hide');
+    weatherAppPreview.classList.remove('iframe-container-show');
+    fridayThirteenPreview.classList.add('iframe-container-hide');
+    fridayThirteenPreview.classList.remove('iframe-container-show');
+
     closeBtn.classList.add('close-preview-hide');
     closeBtn.classList.remove('close-preview-show');
 });
@@ -356,38 +390,30 @@ linkedin.addEventListener('click', () => {
 });
 
 // contact form
-var form = document.getElementById("contact-form");
-    async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-                // if (localStorage.getItem('lang') === 'english') {
-                //     status.innerHTML = "Thanks for your submission!";
-                // }
-                // else if (localStorage.getItem('lang') === 'french') {
-                //     status.innerHTML = "Merci pour votre soumission!"
-            // }
-                status.innerHTML = "Thanks for your submission!";
-                status.classList.add('success');
-                form.reset()
-        }).catch(error => {
-                // if (localStorage.getItem('lang') === 'english') {
-                //     status.innerHTML = "Oops! There was a problem submitting your form";
-                // }
-                // else if (localStorage.getItem('lang') === 'french') {
-                //     status.innerHTML = "Oups! Un problème est survenu lors de l'envoi de votre formulaire"
-            // }
-            status.innerHTML = "Oops! There was a problem submitting your form";
-            status.classList.add('error');
-        });
-    }
+const  form = document.getElementById("contact-form");
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    const status = document.getElementById("status");
+    const data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        console.log(response)
+        status.innerHTML = "Thanks for your submission!";
+        status.classList.add('success');
+        form.reset()
+    }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form";
+        status.classList.add('error');
+        console.log(error)
+    });
+}
+
 form.addEventListener("submit", handleSubmit);
 
 // download cv

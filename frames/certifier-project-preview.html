@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <style>
         img {
             border: solid 1px #334455;;
@@ -19,9 +19,9 @@
         </div>
         <div class="preview-bottom-part">
             <div class="preview-left-col">
-                <img src="./img/screenshots/certifier-landing.jpeg" alt="landing">
-                <img src="./img/screenshots/certifier-issue.jpeg" alt="issue">
-                <img src="./img/screenshots/certifier-verify.jpeg" alt="verify">
+                <img src="../img/screenshots/certifier-landing.jpeg" alt="landing">
+                <img src="../img/screenshots/certifier-issue.jpeg" alt="issue">
+                <img src="../img/screenshots/certifier-verify.jpeg" alt="verify">
             </div>
             <div class="preview-right-col">
                 <h2 class="preview-section-title">description</h2>
@@ -42,6 +42,7 @@
                     <h3 class="technology">solidity</h3>
                 </div>
                 <button class="launch-project certifier-btn">launch project</button>
+                <button class="launch-project code-btn">source code</button>
             </div>
         </div>
     </div>
@@ -50,7 +51,10 @@
         projectButton.addEventListener('click', () => {
             window.open("https://project-m2-certifier.herokuapp.com", '_blank');
         });
+        const codeButton = document.querySelector('.code-btn');
+        codeButton.addEventListener('click', () => {
+            window.open("https://github.com/redshift14/Projet-M2", '_blank');
+        });
     </script>
-    
 </body>
 </html>

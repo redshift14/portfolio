@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Friday The Thirteens</title>
+</head>
+<body>
+    <div class="certifier-preview preview-page">
+        <div class="preview-top-part">
+            <h1>Friday The Thirteens Code Wars Challenge</h1>
+        </div>
+        <div class="preview-bottom-part">
+            <div class="preview-left-col">
+                <img src="../img/screenshots/friday-thirteen.webp" alt="landing">
+                <img src="../img/screenshots/friday-thirteen-result.webp" alt="result">
+            </div>
+            <div class="preview-right-col">
+                <h2 class="preview-section-title">description</h2>
+                <p class="preview-section-text">
+                    code wars inspired challenge, calculate the number of friday the thirteens in a given year or in a 
+                    range of years
+                </p>
+                <h2 class="preview-section-title">technologies</h2>
+                <div class="technologies-section">
+                    <h3 class="technology">html</h3>
+                    <h3 class="technology">css</h3>
+                    <h3 class="technology">javascript</h3>
+                </div>
+                <button class="launch-project friday-thirteen-btn">launch project</button>
+                <button class="launch-project code-btn">source code</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const projectButton = document.querySelector('.friday-thirteen-btn');
+        projectButton.addEventListener('click', () => {
+            window.open("https://redshift14.github.io/code-wars-friday-the-thirteens/", '_blank');
+        });
+        const codeButton = document.querySelector('.code-btn');
+        codeButton.addEventListener('click', () => {
+            window.open("https://github.com/redshift14/code-wars-friday-the-thirteens", '_blank');
+        });
+    </script>
+</body>
+</html>

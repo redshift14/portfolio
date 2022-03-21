@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Portfolio Template</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>Weather App</title>
 </head>
 <body>
     <div class="certifier-preview preview-page">
         <div class="preview-top-part">
-            <h1>Personal Portfolio Static Template</h1>
+            <h1>Weather App</h1>
         </div>
         <div class="preview-bottom-part">
             <div class="preview-left-col">
-                <img src="./img/screenshots/portfolio-1-landing.jpeg" alt="landing">
-                <img src="./img/screenshots/portfolio-1-contact.jpeg" alt="contact">
+                <img src="../img/screenshots/weather-1.webp" alt="landing-1">
+                <img src="../img/screenshots/weather-2.webp" alt="landing-2">
             </div>
             <div class="preview-right-col">
                 <h2 class="preview-section-title">description</h2>
                 <p class="preview-section-text">
-                    Static template for a personal portfolio with modern UI design, built with html css and javascript.
+                    a simple weather app that sets the background according to the selected location,
+                    using openweathermap to get weather data and Api and Unsplash Api to get images for locations.
                 </p>
                 <h2 class="preview-section-title">technologies</h2>
                 <div class="technologies-section">
                     <h3 class="technology">html</h3>
                     <h3 class="technology">css</h3>
                     <h3 class="technology">javascript</h3>
+                    <h3 class="technology">api</h3>
                 </div>
-                <button class="launch-project portfolio-1-btn">launch project</button>
+                <button class="launch-project weather-btn">launch project</button>
+                <button class="launch-project code-btn">source code</button>
             </div>
         </div>
     </div>
     <script>
-        const projectButton = document.querySelector('.portfolio-1-btn');
+        const projectButton = document.querySelector('.weather-btn');
         projectButton.addEventListener('click', () => {
-            window.open("https://redshift14.github.io/personal-portfolio-1/", '_blank');
+            window.open("https://pedantic-banach-42fc63.netlify.app/", '_blank');
+        });
+        const codeButton = document.querySelector('.code-btn');
+        codeButton.addEventListener('click', () => {
+            window.open("https://github.com/redshift14/weather-app", '_blank');
         });
     </script>
 </body>
