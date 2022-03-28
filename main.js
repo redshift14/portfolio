@@ -284,6 +284,7 @@ const fawatirBtn = document.querySelector('.fawatir-btn')
 const manageBtn = document.querySelector('.manage-challenge-btn');
 const weatherAppBtn = document.querySelector('.weather-app-btn');
 const fridayThirteenBtn = document.querySelector('.friday-thirteen-btn');
+const countriesBtn = document.querySelector('.countries-challenge-btn');
 
 const certifierPreview = document.querySelector('.certifier-preview-page');
 const univPreview = document.querySelector('.univ-preview-page');
@@ -293,6 +294,7 @@ const fawatirPreview = document.querySelector('.fawatir-preview-page');
 const managePreview = document.querySelector('.manage-challenge-preview-page');
 const weatherAppPreview = document.querySelector('.weather-app-preview-page');
 const fridayThirteenPreview = document.querySelector('.friday-thirteen-preview-page');
+const countriesPreview = document.querySelector('.countries-challenge-preview-page');
 
 const closeBtn = document.querySelector('.close-preview');
 
@@ -352,6 +354,13 @@ fridayThirteenBtn.addEventListener('click', () => {
     closeBtn.classList.remove('close-preview-hide');
 })
 
+countriesBtn.addEventListener('click', () => {
+    countriesPreview.classList.add('iframe-container-show');
+    countriesPreview.classList.remove('iframe-container-hide');
+    closeBtn.classList.add('close-preview-show');
+    closeBtn.classList.remove('close-preview-hide');
+})
+
 closeBtn.addEventListener('click', () => {
     certifierPreview.classList.add('iframe-container-hide');
     certifierPreview.classList.remove('iframe-container-show');
@@ -369,6 +378,8 @@ closeBtn.addEventListener('click', () => {
     weatherAppPreview.classList.remove('iframe-container-show');
     fridayThirteenPreview.classList.add('iframe-container-hide');
     fridayThirteenPreview.classList.remove('iframe-container-show');
+    countriesPreview.classList.add('iframe-container-hide');
+    countriesPreview.classList.remove('iframe-container-show');
 
     closeBtn.classList.add('close-preview-hide');
     closeBtn.classList.remove('close-preview-show');
