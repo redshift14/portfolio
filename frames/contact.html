@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../scripts/contact.js" defer></script>
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Contact Me</title>
+</head>
+<body class="contact-body">
+  <main class="contact-main">
+    <h3>contact me</h3>
+    <form action="https://formspree.io/f/xayaappb" method="POST" id="contact-form" class="form">
+      <input type="text" name="name" id="name" placeholder="your name" required>
+      <input type="email" name="email" id="email" placeholder="your email" required>
+      <input type="text" name="message" id="message" placeholder="your message" required>
+      <button type="submit" class="submit-btn">submit</button>
+    </form>
+    <p id="status"></p>
+  </main>
+  <footer class="contact-footer">
+    <a href="#">linkedin</a>
+    <span>&#8226;</span>
+    <a href="#">github</a>
+  </footer>
+</body>
+</html>
