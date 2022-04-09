@@ -204,7 +204,7 @@ const getProjects = () => {
           </div>
           <div class="info">
             <div class="left">                
-              <p><strong>technologies used: </strong>${projectTechnologies}</p>
+              <p><strong>les technologies utilisées: </strong>${projectTechnologies}</p>
             </div>
             <div class="right">
               <button id="code-btn" onclick="function openCode(){ window.open('${project.code}', '_blank')}; openCode();">code</button>
