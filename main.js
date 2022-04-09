@@ -154,7 +154,7 @@ const contactBtn = document.querySelector('#contact-btn')
 const closeFrame = document.querySelector('.close-frame')
 
 contactBtn.addEventListener('click', () => {
-  contactPage.setAttribute('src', '../contact.html')
+  contactPage.setAttribute('src', './contact.html')
   contactPage.dataset.lang = globalLang
   closeFrame.classList.remove('hidden')
   contactPage.classList.remove('hidden')
@@ -171,15 +171,15 @@ closeFrame.addEventListener('click', () => {
 /* resume btn */ 
 resumeBtn.addEventListener('click', () => {
   if (globalLang === 'fr') {
-    window.open('../Anas Arif Fr.pdf')
+    window.open('./Anas Arif Fr.pdf')
   }
   else if (globalLang === 'en') {
-    window.open('../Anas Arif En.pdf')
+    window.open('./Anas Arif En.pdf')
   }
 })
 
 /* projects */ 
-import projects from "./projects.js"
+import projects from "./scripts/projects.js"
 
 const projectsContainer = document.querySelector('.projects-cards')
 
