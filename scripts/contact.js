@@ -69,3 +69,14 @@ const setLang = (lang) => {
 }
 
 setLang(globalLang)
+
+/* links */
+const github = document.querySelector('#github')
+const linkedin = document.querySelector('#linkedin')
+
+github.addEventListener('click', () => {
+  window.open("https://github.com/redshift14", '_blank')
+});
+linkedin.addEventListener('click', () => {
+  window.open("https://linkedin.com/in/anas-arif-mi", '_blank')
+});  
