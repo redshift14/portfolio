@@ -1,10 +1,11 @@
-## Links
-
-- Live URL: [Anas Arif](https://redshift14.github.io/portfolio/)
-
-### Built with
+## Built with
 
 - Semantic HTML5 Markup
 - Flexbox
 - CSS Grid
-- Vanilla JavaScript
+- JavaScript
+- Animate on Scroll Libraray
+
+## Useful Links
+
+- Animate on Scroll Library: [aos](https://github.com/michalsnik/aos)
