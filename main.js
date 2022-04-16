@@ -184,6 +184,14 @@ import projects from "./scripts/projects.js"
 const projectsContainer = document.querySelector('.projects-cards')
 
 const getProjects = () => {
+
+  // // aos
+  AOS.init({
+    offset: 400, 
+    duration: 1000
+  });
+
+  // the projects
   let html = '';
   projectsContainer.innerHTML = ''
   projects.forEach(project => {
@@ -192,7 +200,7 @@ const getProjects = () => {
 
     if (globalLang === 'fr') {
       html += `
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-left">
           <h4>${project.name.fr}</h4>
           <div class="content">
             <div class="left">
@@ -216,7 +224,7 @@ const getProjects = () => {
     }
     else {
       html += `
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-left">
           <h4>${project.name.en}</h4>
           <div class="content">
             <div class="left">
@@ -241,5 +249,6 @@ const getProjects = () => {
   });
   projectsContainer.innerHTML = html;
 }
+
 
 getProjects()
