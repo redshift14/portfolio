@@ -187,8 +187,9 @@ const getProjects = () => {
 
   // // aos
   AOS.init({
-    offset: 400, 
-    duration: 1000
+    offset: 100, 
+    duration: 1000,
+    delay: 50
   });
 
   // the projects
@@ -200,7 +201,7 @@ const getProjects = () => {
 
     if (globalLang === 'fr') {
       html += `
-        <div class="project-card" data-aos="fade-left">
+        <div class="project-card" data-aos="fade">
           <h4>${project.name.fr}</h4>
           <div class="content">
             <div class="left">
@@ -224,7 +225,7 @@ const getProjects = () => {
     }
     else {
       html += `
-        <div class="project-card" data-aos="fade-left">
+        <div class="project-card" data-aos="fade">
           <h4>${project.name.en}</h4>
           <div class="content">
             <div class="left">
