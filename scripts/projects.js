@@ -17,6 +17,21 @@ const projects = [
   {
     id: 2,
     name: {
+      en: 'GratisGames',
+      fr: 'GratisGames' 
+    },
+    description: {
+      en: 'single page website to display free to play games based on the free to play games api by digiwalls, users can browse, filter, and sort the free to play games, it features most of react principal concepts. It also uses material ui for styling.',
+      fr: "site Web d'une seule page pour afficher des jeux gratuits basés sur l'API de jeux gratuits de digiwalls, les utilisateurs peuvent parcourir, filtrer et trier les jeux gratuits, il présente la plupart des principaux concepts de réaction. Il utilise également material ui pour le style."
+    },
+    image: 'https://raw.githubusercontent.com/redshift14/portfolio/master/resources/images/gratis-games-card.webp',
+    code: 'https://github.com/redshift14/gratis-games',
+    launch: 'https://62e17949e9ceec08c6c69a3f--illustrious-melomakarona-0314f6.netlify.app/',
+    technologies: [ 'react js', 'material ui', 'api' ]
+  },
+  {
+    id: 3,
+    name: {
       en: 'rest countries api',
       fr: 'pays rest api' 
     },
@@ -30,7 +45,7 @@ const projects = [
     technologies: [ 'react js', 'api' ]
   },
   {
-    id: 3,
+    id: 4,
     name: {
       en: 'manage landing page',
       fr: 'manage page de destination'
@@ -45,7 +60,7 @@ const projects = [
     technologies: [ 'html', 'css', 'javascript', 'splide js' ]
   },
   {
-    id: 4,
+    id: 5,
     name: {
       en: 'weather app',
       fr: 'application météo'
@@ -60,7 +75,7 @@ const projects = [
     technologies: [ 'html', 'css', 'javascript', 'api' ]
   },
   {
-    id: 5,
+    id: 6,
     name: {
       en: 'todo app',
       fr: 'application todo'
