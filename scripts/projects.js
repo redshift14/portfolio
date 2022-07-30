@@ -26,7 +26,7 @@ const projects = [
     },
     image: 'https://raw.githubusercontent.com/redshift14/portfolio/master/resources/images/gratis-games-card.webp',
     code: 'https://github.com/redshift14/gratis-games',
-    launch: 'https://62e17949e9ceec08c6c69a3f--illustrious-melomakarona-0314f6.netlify.app/',
+    launch: 'https://illustrious-melomakarona-0314f6.netlify.app/',
     technologies: [ 'react js', 'material ui', 'api' ]
   },
   {
